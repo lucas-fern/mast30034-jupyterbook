@@ -1,5 +1,46 @@
 # Subject Overview
 
+## Assessment Structure
+Project 1 -- Individual Report: **30%**
+- Released *day one* of semester!
+- Due *Monday 21st of August (09:00)*, (start of week **5**).
+- [Assignment specification](https://www.overleaf.com/project/6487b326d555f7d3313a4de2)
+
+Mid-semester Quiz: **10%**
+- More details later in the semester.
+
+Project 2 -- Group Industry Project: **60%**
+- Released at the start of week 6.
+- Groups of 5, you can form these starting now, ideally within the tutorial.
+- Runs for the second half of the semester.
+- Includes marks for:
+  - Attendance and weekly meeting minutes.
+  - Weekly progress checkpoints (20%).
+  - Presentations (30%).
+  - Team review and self-reflection (10%).
+
+**No exam!** 🥳🎉
+
+## Tutorials
+
+Weeks 1-3 we will cover technical content relevant to Data Science jobs in industry.
+- Tutorial content for these weeks is hosted [here](https://github.com/VoLKyyyOG/MAST30034_Python/tree/main/tutorials)
+  - If you haven't already, `clone` the repo. We will be going through the notebooks and you should be able to run them.
+
+Week 4 we will reserve some time to discuss the ongoing **Project 1**.
+
+Week 5 we will be preparing for **Project 2** and we'll have an opportunity to cover miscellaneous data science/technical/industry content and questions that you are interested in.
+
+**In weeks 6-12, workshops are compulsory.** We will be working on the industry project in our groups.
+- Your tutor will act as a non-technical supervisor throughout this project.
+- You will be required to complete the project autonomously, and guidance from staff will be limited (reflecting their non-technical supervisory role).
+- The tutorials can be used to meet with your team and work on the project together.
+- Weekly checkpoints will be assessed in the tutorials.
+- Meeting minutes will be due at the end of each week.
+
+<!--
+## Tentative Lecture Schedule
+
 <table>
 <thead>
   <tr>
@@ -72,24 +113,5 @@
 </tbody>
 </table>
 
-## Assessment Structure
-Tutorial participation and contributions to online discussion: **20%**.
-- Each tutorial is worth 2%. 
-- Notes should be posted on the [discussion board](https://canvas.lms.unimelb.edu.au/courses/151263/discussion_topics) within 24 hours of the tutorial.
-- There will be a total of 12 tutorials, so students can miss one without affecting their mark. 
-- The first introductory tutorial (week 1) is not marked.
-
-Critical evaluation essay, due week 7: **30%**. 
-- An individual essay that critically evaluates a technology from an ethical perspective. 1500 words, requires 5 citations.
-
-Research essay, due week 12: **30%**. 
-- Another individual essay that researches a particular topic on digital ethics. 1500 words, requires 10 citations.
-
-Exam: **20%**.
-- A short online quiz.
-
-## Tutorial Structure
-Each week we will have a set of Tasks/Activities which are the assessed component of the tutorials.
-
-The tasks should be completed within your groups of 4, and your answers must be published to the [discussion board](https://canvas.lms.unimelb.edu.au/courses/151263/discussion_topics) within 24 hours of the tutorial to receive a mark.
+-->
 
