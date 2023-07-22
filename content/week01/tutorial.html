@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Tutorial 1 Activities &#8212; MAST30034: Applied Data Science</title>
+    <title>Tutorial 1: Introduction, Project 1, and PySpark &#8212; MAST30034: Applied Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -54,7 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="prev" title="Introduction" href="summary.html" />
+    <link rel="prev" title="Subject Overview" href="../subject-overview.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -132,27 +132,10 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="introduction.html">
-   Tutorial 1: Introduction
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Tutorial 1: Introduction, Project 1, and PySpark
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2">
-    <a class="reference internal" href="summary.html">
-     Introduction
-    </a>
-   </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     Tutorial 1 Activities
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -227,7 +210,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/content/week01/activities.md"
+        <a href="../../_sources/content/week01/tutorial.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -264,23 +247,80 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#git-jupyter-and-the-prerequisite-notebook">
+   Git, Jupyter, and the Prerequisite Notebook
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#digression-project-1">
+   Digression: Project 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#intro-to-pyspark">
+   Intro to PySpark
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Tutorial 1 Activities</h1>
+                <h1>Tutorial 1: Introduction, Project 1, and PySpark</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#git-jupyter-and-the-prerequisite-notebook">
+   Git, Jupyter, and the Prerequisite Notebook
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#digression-project-1">
+   Digression: Project 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#intro-to-pyspark">
+   Intro to PySpark
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -288,59 +328,67 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="tutorial-1-activities">
-<h1>Tutorial 1 Activities<a class="headerlink" href="#tutorial-1-activities" title="Permalink to this headline">#</a></h1>
-<div class="sd-tab-set docutils">
-<input checked="checked" id="78d4106b-c209-4140-a3d4-e1e81d145fdd" name="d9c3c34e-bbc1-43c4-86f2-94ef381b42e2" type="radio">
-</input><label class="sd-tab-label" for="78d4106b-c209-4140-a3d4-e1e81d145fdd">
-Task 1</label><div class="sd-tab-content docutils">
+  <section class="tex2jax_ignore mathjax_ignore" id="tutorial-1-introduction-project-1-and-pyspark">
+<h1>Tutorial 1: Introduction, Project 1, and PySpark<a class="headerlink" href="#tutorial-1-introduction-project-1-and-pyspark" title="Permalink to this headline">#</a></h1>
+<p>Week 1 is a big tutorial. Here’s what we’re covering:</p>
+<ol class="simple">
+<li><p>Intro and overview of the subject.</p></li>
+<li><p>Git and Jupyter.</p></li>
+<li><p>The Prerequisite notebook.</p></li>
+<li><p>Intro to PySpark.</p></li>
+</ol>
+<section id="git-jupyter-and-the-prerequisite-notebook">
+<h2>Git, Jupyter, and the Prerequisite Notebook<a class="headerlink" href="#git-jupyter-and-the-prerequisite-notebook" title="Permalink to this headline">#</a></h2>
+<p>The tutorial content is hosted on GitHub <a class="reference external" href="https://github.com/VoLKyyyOG/MAST30034_Python/tree/main/tutorials">here</a>. To get started:</p>
 <ul class="simple">
-<li><p>Form a group of four people in the tutorial.</p>
+<li><p>open the <a class="reference external" href="https://github.com/VoLKyyyOG/MAST30034_Python/blob/main/tutorials/tute_1/Python_PreReq_Notebook.ipynb">prerequisite notebook</a></p>
 <ul>
-<li><p>Zoom groups should allocate themselves to breakout rooms.</p></li>
+<li><p>if you’ve already done this, thanks!</p></li>
+<li><p>if not, make sure you’re reading our Canvas announcements</p></li>
 </ul>
 </li>
-<li><p>Nominate a member to take notes from your group discussion.</p>
+<li><p><code class="docutils literal notranslate"><span class="pre">clone</span></code> the repository</p>
 <ul>
-<li><p>Notes (published on the forum <em>within 24 hours of the tutorial</em>) are necessary to get your participation mark (2% per week).</p></li>
-<li><p>The note taker can rotate throughout the semester.</p></li>
+<li><p>you can use the <a class="reference external" href="https://git-scm.com/downloads"><code class="docutils literal notranslate"><span class="pre">git</span></code> Command Line Interface (CLI)</a></p></li>
+<li><p>or <a class="reference external" href="https://desktop.github.com/">GitHub Desktop</a></p></li>
+</ul>
+</li>
+<li><p>run the prerequisite notebook as a Jupyter notebook</p>
+<ul>
+<li><p>you can choose to run Jupyter:</p>
+<ul>
+<li><p>with Anaconda</p></li>
+<li><p>in Visual Studio Code</p></li>
+<li><p>with JupyterLab (<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">jupyterlab</span></code> and <code class="docutils literal notranslate"><span class="pre">jupyter-lab</span></code>)</p></li>
+<li><p>with Jupyter Notebook (<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">notebook</span></code> and <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code>)</p></li>
 </ul>
 </li>
 </ul>
-</div>
-<input id="de9e9d25-c44a-4bc8-96a9-ad303462b232" name="d9c3c34e-bbc1-43c4-86f2-94ef381b42e2" type="radio">
-</input><label class="sd-tab-label" for="de9e9d25-c44a-4bc8-96a9-ad303462b232">
-Task 2</label><div class="sd-tab-content docutils">
-<p>In your group, each person in the group should answer the following questions:</p>
-<ul class="simple">
-<li><p>What is your name?</p></li>
-<li><p>What degree are you doing?</p></li>
+</li>
 </ul>
-<p>Then, as a team, answer the following:</p>
+<p>This was a prerequisite, so do this while we discuss <strong>Project 1</strong> if you haven’t already.</p>
+</section>
+<section id="digression-project-1">
+<h2>Digression: Project 1<a class="headerlink" href="#digression-project-1" title="Permalink to this headline">#</a></h2>
+<p>Project 1 is released. It is due on the first day of week 5.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>If you haven’t started already, <em>start today</em>.</strong></p>
 <ul class="simple">
-<li><p>What are three things that you have in common? (Other than the degree you are enrolled in!)</p></li>
+<li><p>I’m serious!!</p></li>
+<li><p>No one listens to this, and everyone complains that we didn’t give you long enough in week 5.</p></li>
+<li><p>This used to be due at the start of week 4, so we have little sympathy for people who didn’t listen to this warning.</p></li>
+<li><p>The handbook says this will take <strong>30 hours</strong>. <em>This isn’t a joke.</em></p></li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>We’ll discuss these as a class, no need to post your answers for <em>this</em> task on the discussion forum.</p>
 </div>
-</div>
-<input id="bcff455a-8836-45fe-a5b4-a8a7dd0adb61" name="d9c3c34e-bbc1-43c4-86f2-94ef381b42e2" type="radio">
-</input><label class="sd-tab-label" for="bcff455a-8836-45fe-a5b4-a8a7dd0adb61">
-Task 3</label><div class="sd-tab-content docutils">
-<p>Once you have been introduced to each other, each of you answer the following questions:</p>
-<ul class="simple">
-<li><p>Why did you take this subject?</p></li>
-<li><p>What do you expect you will learn in this subject?</p></li>
-<li><p>What are your favourite robot, AI, or other computer representations in films/TV/books/manga?</p></li>
-<li><p>What is your team name?</p></li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Do <a class="reference external" href="https://canvas.lms.unimelb.edu.au/courses/151263/discussion_topics/870528">post your answers to this task</a>!</p>
-</div>
-</div>
-</div>
+<p>View the <a class="reference external" href="https://www.overleaf.com/project/6487b326d555f7d3313a4de2">assignment specification</a> and complete the <strong>Project 1 Canvas module</strong> <em>today!</em></p>
+</section>
+<section id="intro-to-pyspark">
+<h2>Intro to PySpark<a class="headerlink" href="#intro-to-pyspark" title="Permalink to this headline">#</a></h2>
+<p>Hopefully we’ve got about an hour left to spend on the <a class="reference external" href="https://github.com/VoLKyyyOG/MAST30034_Python/blob/main/tutorials/tute_1/Tute1_Python.ipynb">tutorial 1 notebook</a>.</p>
+<p>Open this up in your Jupyter instance and we’ll start talking through the content.</p>
+<p>If you’re struggling to run the notebook, ask the people on your table for help, then ask me.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -370,11 +418,11 @@ Task 3</label><div class="sd-tab-content docutils">
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="summary.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../subject-overview.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Introduction</p>
+            <p class="prev-next-title">Subject Overview</p>
         </div>
     </a>
 </div>
