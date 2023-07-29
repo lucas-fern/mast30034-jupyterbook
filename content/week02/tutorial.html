@@ -6,55 +6,55 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Welcome to Applied Data Science &#8212; MAST30034: Applied Data Science</title>
+    <title>Tutorial 2: More PySpark, and Geospatial Visualisations &#8212; MAST30034: Applied Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/design-tabs.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.png"/>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Subject Overview" href="content/subject-overview.html" />
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Subject Overview" href="../subject-overview.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -89,27 +89,27 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="bd-sidebar noprint" id="site-navigation">
     <div class="bd-sidebar__content">
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="#">
+    <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
         
       
       
-      <img src="_static/ADS-icon.png" class="logo" alt="logo">
+      <img src="../../_static/ADS-icon.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">MAST30034: Applied Data Science</h1>
       
     </a>
-</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
                     Welcome to Applied Data Science
                 </a>
             </li>
@@ -121,7 +121,7 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="content/subject-overview.html">
+  <a class="reference internal" href="../subject-overview.html">
    Subject Overview
   </a>
  </li>
@@ -131,9 +131,9 @@ const thebe_selector_output = ".output, .cell_output"
   Tutorial Content
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="content/week02/tutorial.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Tutorial 2: More PySpark, and Geospatial Visualisations
   </a>
  </li>
@@ -210,7 +210,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/index.md"
+        <a href="../../_sources/content/week02/tutorial.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -270,11 +270,14 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#table-of-contents">
-   Table of Contents
+  <a class="reference internal nav-link" href="#project-1-reminder">
+   Project 1 Reminder
   </a>
-  <ul class="nav section-nav flex-column">
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tutorial-outline">
+   Tutorial Outline
+  </a>
  </li>
 </ul>
 
@@ -285,7 +288,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Welcome to Applied Data Science</h1>
+                <h1>Tutorial 2: More PySpark, and Geospatial Visualisations</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -296,11 +299,14 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#table-of-contents">
-   Table of Contents
+  <a class="reference internal nav-link" href="#project-1-reminder">
+   Project 1 Reminder
   </a>
-  <ul class="nav section-nav flex-column">
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tutorial-outline">
+   Tutorial Outline
+  </a>
  </li>
 </ul>
 
@@ -312,27 +318,40 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-applied-data-science">
-<h1>Welcome to Applied Data Science<a class="headerlink" href="#welcome-to-applied-data-science" title="Permalink to this headline">#</a></h1>
-<p>This (unofficial) site contains my tutorial notes and can be accessed at <a class="reference external" href="https://mast30034.lfern.com">mast30034.lfern.com</a></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The most up-to-date and accurate information will always be located on <a class="reference external" href="https://canvas.lms.unimelb.edu.au/courses/158133">the official Canvas site</a>.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="tutorial-2-more-pyspark-and-geospatial-visualisations">
+<h1>Tutorial 2: More PySpark, and Geospatial Visualisations<a class="headerlink" href="#tutorial-2-more-pyspark-and-geospatial-visualisations" title="Permalink to this headline">#</a></h1>
+<p>This week we will cover a lot content that is essential for succeeding in Project 1. We’ll look at how to do more advanced data manipulation in PySpark, and will also cover how to visualise our TLC data on the map of NYC.</p>
+<p>We’ll spend pretty much the whole tutorial working through the notebook, which should act as a valuable reference for you as you continue working on Project 1.</p>
+<section id="project-1-reminder">
+<h2>Project 1 Reminder<a class="headerlink" href="#project-1-reminder" title="Permalink to this headline">#</a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>If you haven’t started, <em>get started…</em></strong></p>
 </div>
-<section id="table-of-contents">
-<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">#</a></h2>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Subject Overview</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="content/subject-overview.html">Subject Overview</a></li>
+</section>
+<section id="tutorial-outline">
+<h2>Tutorial Outline<a class="headerlink" href="#tutorial-outline" title="Permalink to this headline">#</a></h2>
+<p>In the session today we will:</p>
+<ol class="simple">
+<li><p>Quickly look at the content we missed at the end of last week</p></li>
+<li><p>Discuss Spark’s usage of <em>lazy evaluation</em></p></li>
+<li><p>Troubleshoot broken <code class="docutils literal notranslate"><span class="pre">.parquet</span></code> schemas</p></li>
+<li><p>Look at more operations in PySpark</p>
+<ul class="simple">
+<li><p>Renaming</p></li>
+<li><p>Creating derived columns</p></li>
+<li><p>User Defined Functions (UDFs)</p></li>
 </ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tutorial Content</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="content/week02/tutorial.html">Tutorial 2: More PySpark, and Geospatial Visualisations</a></li>
-</ul>
-</div>
+</li>
+<li><p>Look at Spark SQL</p></li>
+<li><p><em>Take a break</em></p></li>
+<li><p>Install and process shapefiles with <code class="docutils literal notranslate"><span class="pre">GeoPandas</span></code></p></li>
+<li><p>Produce geospatial visualisations with <code class="docutils literal notranslate"><span class="pre">folium</span></code></p></li>
+<li><p>Provide tips for including useful visualisations in Project 1</p></li>
+<li><p>Produce other visualisations, including heatmaps for visualising correlation</p></li>
+<li><p>Look at just a few functions from <code class="docutils literal notranslate"><span class="pre">pyspark.ml</span></code></p></li>
+</ol>
+<p>There’s a lot to cover, and this might be the most technical/dry tutorial, but it’s all valuable for Project 1 and building your understanding of Spark.</p>
 </section>
 </section>
 
@@ -349,7 +368,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             name: "python3",
-            path: "./."
+            path: "./content/week02"
         },
         predefinedOutput: true
     }
@@ -363,12 +382,12 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="content/subject-overview.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Subject Overview</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+    <a class='left-prev' id="prev-link" href="../subject-overview.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Subject Overview</p>
+        </div>
     </a>
 </div>
             </footer>
@@ -391,7 +410,7 @@ title="Print to PDF"
     </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 
 
   </body>
