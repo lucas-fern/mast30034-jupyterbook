@@ -10,6 +10,8 @@ parts:
 - caption: Tutorial Content
   chapters:
   - file: content/week01/tutorial
+  chapters:
+  - file: content/week02/tutorial
 
 #   - file: content/week12/introduction
 #     sections:
