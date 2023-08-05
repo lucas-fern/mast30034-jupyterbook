@@ -6,56 +6,55 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Subject Overview &#8212; MAST30034: Applied Data Science</title>
+    <title>Tutorial 3: Regression and Project Consultation &#8212; MAST30034: Applied Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/design-tabs.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="shortcut icon" href="../_static/favicon.png"/>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Tutorial 3: Regression and Project Consultation" href="week03/tutorial.html" />
-    <link rel="prev" title="Welcome to Applied Data Science" href="../index.html" />
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Subject Overview" href="../subject-overview.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -90,19 +89,19 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="bd-sidebar noprint" id="site-navigation">
     <div class="bd-sidebar__content">
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
+    <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
         
       
       
-      <img src="../_static/ADS-icon.png" class="logo" alt="logo">
+      <img src="../../_static/ADS-icon.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">MAST30034: Applied Data Science</h1>
       
     </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -110,7 +109,7 @@ const thebe_selector_output = ".output, .cell_output"
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="../index.html">
+                <a class="reference internal" href="../../index.html">
                     Welcome to Applied Data Science
                 </a>
             </li>
@@ -120,9 +119,9 @@ const thebe_selector_output = ".output, .cell_output"
   Subject Overview
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../subject-overview.html">
    Subject Overview
   </a>
  </li>
@@ -132,9 +131,9 @@ const thebe_selector_output = ".output, .cell_output"
   Tutorial Content
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="week03/tutorial.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Tutorial 3: Regression and Project Consultation
   </a>
  </li>
@@ -211,7 +210,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/content/subject-overview.md"
+        <a href="../../_sources/content/week03/tutorial.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -271,13 +270,13 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#assessment-structure">
-   Assessment Structure
+  <a class="reference internal nav-link" href="#project-1-reminder">
+   Project 1 Reminder
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tutorials">
-   Tutorials
+  <a class="reference internal nav-link" href="#tutorial-outline">
+   Tutorial Outline
   </a>
  </li>
 </ul>
@@ -289,7 +288,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Subject Overview</h1>
+                <h1>Tutorial 3: Regression and Project Consultation</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -300,13 +299,13 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#assessment-structure">
-   Assessment Structure
+  <a class="reference internal nav-link" href="#project-1-reminder">
+   Project 1 Reminder
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tutorials">
-   Tutorials
+  <a class="reference internal nav-link" href="#tutorial-outline">
+   Tutorial Outline
   </a>
  </li>
 </ul>
@@ -319,132 +318,29 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="subject-overview">
-<h1>Subject Overview<a class="headerlink" href="#subject-overview" title="Permalink to this headline">#</a></h1>
-<section id="assessment-structure">
-<h2>Assessment Structure<a class="headerlink" href="#assessment-structure" title="Permalink to this headline">#</a></h2>
-<p>Project 1 – Individual Report: <strong>30%</strong></p>
-<ul class="simple">
-<li><p>Released <em>day one</em> of semester!</p></li>
-<li><p>Due <em>Monday 21st of August (09:00)</em>, (start of week <strong>5</strong>).</p></li>
-<li><p><a class="reference external" href="https://www.overleaf.com/project/6487b326d555f7d3313a4de2">Assignment specification</a></p></li>
-</ul>
-<p>Mid-semester Quiz: <strong>10%</strong></p>
-<ul class="simple">
-<li><p>More details later in the semester.</p></li>
-</ul>
-<p>Project 2 – Group Industry Project: <strong>60%</strong></p>
-<ul class="simple">
-<li><p>Released at the start of week 6.</p></li>
-<li><p>Groups of 5, you can form these starting now, ideally within the tutorial.</p></li>
-<li><p>Runs for the second half of the semester.</p></li>
-<li><p>Includes marks for:</p>
-<ul>
-<li><p>Attendance and weekly meeting minutes.</p></li>
-<li><p>Weekly progress checkpoints (20%).</p></li>
-<li><p>Presentations (30%).</p></li>
-<li><p>Team review and self-reflection (10%).</p></li>
-</ul>
-</li>
-</ul>
-<p><strong>No exam!</strong> 🥳🎉</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="tutorial-3-regression-and-project-consultation">
+<h1>Tutorial 3: Regression and Project Consultation<a class="headerlink" href="#tutorial-3-regression-and-project-consultation" title="Permalink to this headline">#</a></h1>
+<p>This week we’ll recap Linear Regression and look at various ways to implement regression models for your projects. We’ll cover penalised regression models (LASSO and Ridge) and see how we can implement regression for data in both Pandas and PySpark.</p>
+<section id="project-1-reminder">
+<h2>Project 1 Reminder<a class="headerlink" href="#project-1-reminder" title="Permalink to this headline">#</a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>&gt;50% time elapsed ⏳⌛</strong>*</p>
+</div>
 </section>
-<section id="tutorials">
-<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">#</a></h2>
-<p>Weeks 1-3 we will cover technical content relevant to Data Science jobs in industry.</p>
-<ul class="simple">
-<li><p>Tutorial content for these weeks is hosted <a class="reference external" href="https://github.com/VoLKyyyOG/MAST30034_Python/tree/main/tutorials">here</a></p>
-<ul>
-<li><p>If you haven’t already, <code class="docutils literal notranslate"><span class="pre">clone</span></code> the repo. We will be going through the notebooks and you should be able to run them.</p></li>
-</ul>
-</li>
-</ul>
-<p>Week 4 we will reserve some time to discuss the ongoing <strong>Project 1</strong>.</p>
-<p>Week 5 we will be preparing for <strong>Project 2</strong> and we’ll have an opportunity to cover miscellaneous data science/technical/industry content and questions that you are interested in.</p>
-<p><strong>In weeks 6-12, workshops are compulsory.</strong> We will be working on the industry project in our groups.</p>
-<ul class="simple">
-<li><p>Your tutor will act as a non-technical supervisor throughout this project.</p></li>
-<li><p>You will be required to complete the project autonomously, and guidance from staff will be limited (reflecting their non-technical supervisory role).</p></li>
-<li><p>The tutorials can be used to meet with your team and work on the project together.</p></li>
-<li><p>Weekly checkpoints will be assessed in the tutorials.</p></li>
-<li><p>Meeting minutes will be due at the end of each week.</p></li>
-</ul>
-<!--
-## Tentative Lecture Schedule
-
-<table>
-<thead>
-  <tr>
-    <th>Week</th>
-    <th>Lecturer</th>
-    <th>Content</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Week 1</td>
-    <td>Tim Miller</td>
-    <td>Trust, Power, and Machines</td>
-  </tr>
-  <tr>
-    <td>Week 2</td>
-    <td>Tim Miller</td>
-    <td>History of AI</td>
-  </tr>
-  <tr>
-    <td>Week 3</td>
-    <td>Simon Coghlan</td>
-    <td>Utilitarianism and Deontology</td>
-  </tr>
-  <tr>
-    <td>Week 4</td>
-    <td>Simon Coghlan</td>
-    <td>Virtue and Care Ethics</td>
-  </tr>
-  <tr>
-    <td>Week 5</td>
-    <td>Simon Coghlan</td>
-    <td>Fairness, Equity, and Accountability</td>
-  </tr>
-  <tr>
-    <td>Week 6</td>
-    <td>Marc Cheong</td>
-    <td>Transparency</td>
-  </tr>
-  <tr>
-    <td>Week 7</td>
-    <td>Jeannie Patterson</td>
-    <td>Law, Frameworks, and Human Rights</td>
-  </tr>
-  <tr>
-    <td>Week 8</td>
-    <td>Tim Miller</td>
-    <td>Explainability</td>
-  </tr>
-  <tr>
-    <td>Week 9</td>
-    <td>Marc Cheong</td>
-    <td>Algorithmic Bias and Accessibility</td>
-  </tr>
-  <tr>
-    <td>Week 10</td>
-    <td>Marc Cheong</td>
-    <td>Data Governance</td>
-  </tr>
-  <tr>
-    <td>Week 11</td>
-    <td>Gabby Bush</td>
-    <td>AI, Art, and Ethics</td>
-  </tr>
-  <tr>
-    <td>Week 12</td>
-    <td>Simon Coghlan</td>
-    <td>Intelligent Machines &amp; Wrap-up</td>
-  </tr>
-</tbody>
-</table>
-
--->
+<section id="tutorial-outline">
+<h2>Tutorial Outline<a class="headerlink" href="#tutorial-outline" title="Permalink to this headline">#</a></h2>
+<p>In the session today we will:</p>
+<ol class="simple">
+<li><p>Cover the final part of last week’s content.</p></li>
+<li><p>Fit linear models on a sample of our taxi data.</p></li>
+<li><p>Perform model selection.</p></li>
+<li><p>Discuss/recap LASSO and Ridge regression (penalised regression).</p></li>
+<li><p>Fit penalised regression models using <code class="docutils literal notranslate"><span class="pre">glmnet</span></code>.</p></li>
+<li><p>Fit regression models using <code class="docutils literal notranslate"><span class="pre">pyspark.ml</span></code>.</p></li>
+<li><p><strong>Spend the rest of the tutorial consulting about project 1.</strong></p></li>
+<li><p><em>(Optional)</em> Cover some optional additional revision content if we get through everyone’s questions.</p></li>
+</ol>
 </section>
 </section>
 
@@ -461,7 +357,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             name: "python3",
-            path: "./content"
+            path: "./content/week03"
         },
         predefinedOutput: true
     }
@@ -475,19 +371,12 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../index.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../subject-overview.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Welcome to Applied Data Science</p>
+            <p class="prev-next-title">Subject Overview</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="week03/tutorial.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Tutorial 3: Regression and Project Consultation</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
@@ -510,7 +399,7 @@ title="Print to PDF"
     </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 
 
   </body>
