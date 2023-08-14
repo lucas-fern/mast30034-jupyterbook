@@ -1,4 +1,4 @@
-# Tutorial 3: Project 1 Consultation and Intro to Project 2
+# Tutorial 4: Project 1 Consultation and Intro to Project 2
 
 This week we've finished with the Jupyter notebook tutorials and are making time to answer your questions about project 1. We'll also take a first look at the two options for Project 2!
 
