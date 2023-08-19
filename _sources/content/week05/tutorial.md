@@ -23,6 +23,7 @@ In the session today we will:
 
 ```{epigraph}
 The Agile methodology is a project management approach that involves breaking the project into phases and emphasizes continuous collaboration and improvement. Teams follow a cycle of planning, executing, and evaluating.
+
 -- Atlassian Agile Maifesto
 ```
 
