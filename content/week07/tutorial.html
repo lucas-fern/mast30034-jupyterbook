@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Tutorial 2: More PySpark, and Geospatial Visualisations &#8212; MAST30034: Applied Data Science</title>
+    <title>Tutorial 5: Preparing for Project 2 &#8212; MAST30034: Applied Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -54,8 +54,6 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Tutorial 3: Regression and Project Consultation" href="../week03/tutorial.html" />
-    <link rel="prev" title="Tutorial 1: Introduction, Project 1, and PySpark" href="../week01/tutorial.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -132,14 +130,14 @@ const thebe_selector_output = ".output, .cell_output"
   Tutorial Content
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../week01/tutorial.html">
    Tutorial 1: Introduction, Project 1, and PySpark
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week02/tutorial.html">
    Tutorial 2: More PySpark, and Geospatial Visualisations
   </a>
  </li>
@@ -236,7 +234,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/content/week02/tutorial.md"
+        <a href="../../_sources/content/week07/tutorial.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -296,13 +294,42 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#project-1-reminder">
-   Project 1 Reminder
+  <a class="reference internal nav-link" href="#tutorial-outline">
+   Tutorial Outline
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tutorial-outline">
-   Tutorial Outline
+  <a class="reference internal nav-link" href="#the-agile-methodology">
+   The Agile Methodology
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#in-this-subject">
+     In this subject
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#scrum-and-sprints">
+       Scrum and Sprints
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#kanban">
+       Kanban
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#meeting-minutes">
+       Meeting Minutes
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#questions">
+   Questions
   </a>
  </li>
 </ul>
@@ -314,7 +341,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Tutorial 2: More PySpark, and Geospatial Visualisations</h1>
+                <h1>Tutorial 5: Preparing for Project 2</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -325,13 +352,42 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#project-1-reminder">
-   Project 1 Reminder
+  <a class="reference internal nav-link" href="#tutorial-outline">
+   Tutorial Outline
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tutorial-outline">
-   Tutorial Outline
+  <a class="reference internal nav-link" href="#the-agile-methodology">
+   The Agile Methodology
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#in-this-subject">
+     In this subject
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#scrum-and-sprints">
+       Scrum and Sprints
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#kanban">
+       Kanban
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#meeting-minutes">
+       Meeting Minutes
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#questions">
+   Questions
   </a>
  </li>
 </ul>
@@ -344,40 +400,103 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="tutorial-2-more-pyspark-and-geospatial-visualisations">
-<h1>Tutorial 2: More PySpark, and Geospatial Visualisations<a class="headerlink" href="#tutorial-2-more-pyspark-and-geospatial-visualisations" title="Permalink to this headline">#</a></h1>
-<p>This week we will cover a lot content that is essential for succeeding in Project 1. We’ll look at how to do more advanced data manipulation in PySpark, and will also cover how to visualise our TLC data on the map of NYC.</p>
-<p>We’ll spend pretty much the whole tutorial working through the notebook, which should act as a valuable reference for you as you continue working on Project 1.</p>
-<section id="project-1-reminder">
-<h2>Project 1 Reminder<a class="headerlink" href="#project-1-reminder" title="Permalink to this headline">#</a></h2>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>If you haven’t started, <em>get started…</em></strong></p>
-</div>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="tutorial-5-preparing-for-project-2">
+<h1>Tutorial 5: Preparing for Project 2<a class="headerlink" href="#tutorial-5-preparing-for-project-2" title="Permalink to this headline">#</a></h1>
+<p>This week’s tutorial is pretty short. We’ll cover some expectations we have for you in project 2, including how to conduct your meetings, track your tasks, and submit your meeting minutes.</p>
+<p>At the end of the tutorial there will be free time to ask questions, if you’ve got any loose ends to tie up or want to ask about:</p>
+<ul class="simple">
+<li><p>Data Science/Computer Science/AI research,</p></li>
+<li><p>the Data Science industry,</p></li>
+<li><p>any gaps left in your technical knowledge before you graduate,
+then today is the time!</p></li>
+</ul>
 <section id="tutorial-outline">
 <h2>Tutorial Outline<a class="headerlink" href="#tutorial-outline" title="Permalink to this headline">#</a></h2>
 <p>In the session today we will:</p>
 <ol class="simple">
-<li><p>Quickly look at the content we missed at the end of last week</p></li>
-<li><p>Discuss Spark’s usage of <em>lazy evaluation</em></p></li>
-<li><p>Troubleshoot broken <code class="docutils literal notranslate"><span class="pre">.parquet</span></code> schemas</p></li>
-<li><p>Look at more operations in PySpark</p>
+<li><p>Discuss the Agile methodology 🙃</p></li>
+<li><p>Look at one way Kanban boards can be used to track and manage tasks.</p></li>
+<li><p>Suggest how you can conduct effective meetings throughout project 2.</p></li>
+<li><p>Discuss the expectations for submitting weekly meeting minutes.</p></li>
+<li><p>Open the floor for your questions… Industry, academia, tech, very open ended…</p></li>
+</ol>
+</section>
+<section id="the-agile-methodology">
+<h2>The Agile Methodology<a class="headerlink" href="#the-agile-methodology" title="Permalink to this headline">#</a></h2>
+<p><strong>What is the Agile methodology?</strong></p>
+<blockquote class="epigraph">
+<div><p>The Agile methodology is a project management approach that involves breaking the project into phases and emphasizes continuous collaboration and improvement. Teams follow a cycle of planning, executing, and evaluating.</p>
+<p class="attribution">—Atlassian Agile Maifesto</p>
+</div></blockquote>
+<p>If you want to better understanding the principles feel free to check out things like <a class="reference external" href="https://agilemanifesto.org/principles.html">the 12 principles of Agile</a>, but this totally isn’t necessary or very interesting.</p>
+<p><strong>Why do we talk about it in this subject?</strong></p>
+<p>Variants of the agile methodology (Scrum, Kanban, etc.) are used in the majority of tech/software companies. You are highly likely to encounter it in the industry.</p>
+<p>Whether you like it or not, Agile is pretty effective at increasing productivity and output from tech/software teams, hence its wide adoption.</p>
+<section id="in-this-subject">
+<h3>In this subject<a class="headerlink" href="#in-this-subject" title="Permalink to this headline">#</a></h3>
+<p>In this subject we have broken down both projects into weekly chunks, which are referred to in the specifications as <em>sprints</em>. Additionally, we encourage the use of Kanban boards for tracking tasks and progress. All of this is inspired by agile.</p>
+<section id="scrum-and-sprints">
+<h4>Scrum and Sprints<a class="headerlink" href="#scrum-and-sprints" title="Permalink to this headline">#</a></h4>
+<p><a class="reference external" href="https://www.atlassian.com/agile/scrum">Scrum</a> is the most popular implementation of the Agile methodology. To put it simply, this approach involves:</p>
 <ul class="simple">
-<li><p>Renaming</p></li>
-<li><p>Creating derived columns</p></li>
-<li><p>User Defined Functions (UDFs)</p></li>
+<li><p>Deconstructing projects into a series of short <em>sprints</em>.</p></li>
+<li><p>Planning the work that will be done during the sprint.</p></li>
+<li><p>Meeting regularly during the sprints. Usually implemented as daily <em>stand-ups</em>.</p>
+<ul>
+<li><p>A short (~15 min) meeting to align objectives and plan short-term goals.</p></li>
 </ul>
 </li>
-<li><p>Look at Spark SQL</p></li>
-<li><p><em>Take a break</em></p></li>
-<li><p>Install and process shapefiles with <code class="docutils literal notranslate"><span class="pre">GeoPandas</span></code></p></li>
-<li><p>Produce geospatial visualisations with <code class="docutils literal notranslate"><span class="pre">folium</span></code></p></li>
-<li><p>Provide tips for including useful visualisations in Project 1</p></li>
-<li><p>Produce other visualisations, including heatmaps for visualising correlation</p></li>
-<li><p>Look at just a few functions from <code class="docutils literal notranslate"><span class="pre">pyspark.ml</span></code></p></li>
-</ol>
-<p>There’s a lot to cover, and this might be the most technical/dry tutorial, but it’s all valuable for Project 1 and building your understanding of Spark.</p>
+<li><p>Reviewing your progress at the end of the sprint.</p></li>
+<li><p>Conducting a <strong>retrospective</strong> to evaluate what did and didn’t work at the end of the sprint/project.</p></li>
+</ul>
+<p>In this subject this might look like:</p>
+<ul class="simple">
+<li><p>Using the weekly sprints that we have provided in the specifications.</p>
+<ul>
+<li><p>Delegating tasks within your groups to achieve the weekly objectives.</p></li>
+<li><p>Planning how you will complete the weekly checkpoints.</p></li>
+</ul>
+</li>
+<li><p>Meeting once in the tutorial and another time outside of the tutorial.</p>
+<ul>
+<li><p>Using the first meeting to plan and delegate tasks.</p></li>
+<li><p>Using the second to finalise checkpoints, review progress/challenges, and conduct a retrospective.</p></li>
+</ul>
+</li>
+<li><p>Communicating frequently with your team.</p>
+<ul>
+<li><p><em>Establish a chat/communication channel today!</em></p></li>
+</ul>
+</li>
+<li><p>Using Kanban to continuously monitor your progress towards the sprint objectives.</p></li>
+</ul>
+</section>
+<section id="kanban">
+<h4>Kanban<a class="headerlink" href="#kanban" title="Permalink to this headline">#</a></h4>
+<p>Kanban boards are a project management tool designed to visually depict work in different stages of progress.</p>
+<p>Best to cover this with a demonstration.</p>
+</section>
+<section id="meeting-minutes">
+<h4>Meeting Minutes<a class="headerlink" href="#meeting-minutes" title="Permalink to this headline">#</a></h4>
+<p>You should submit meeting minutes each week by Friday 5pm to ensure you get your weekly checkpoint mark.</p>
+<p>Your notes don’t have to be extensive, but should outline:</p>
+<ul class="simple">
+<li><p>Your progress over the last sprint</p></li>
+<li><p>Your plans for the coming sprint</p></li>
+<li><p>Other important notes from your meeting</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="questions">
+<h2>Questions<a class="headerlink" href="#questions" title="Permalink to this headline">#</a></h2>
+<p>Any questions about:</p>
+<ul class="simple">
+<li><p>Today’s content?</p></li>
+<li><p>The Data Science/Computer Science/Tech/AI Industry?</p></li>
+<li><p>Academia/Research/Master’s/PhDs?</p></li>
+<li><p>Anything else…?</p></li>
+</ul>
 </section>
 </section>
 
@@ -394,7 +513,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             name: "python3",
-            path: "./content/week02"
+            path: "./content/week07"
         },
         predefinedOutput: true
     }
@@ -408,20 +527,6 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../week01/tutorial.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Tutorial 1: Introduction, Project 1, and PySpark</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="../week03/tutorial.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Tutorial 3: Regression and Project Consultation</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
 </div>
             </footer>
         </div>
