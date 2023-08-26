@@ -14,6 +14,7 @@ parts:
   - file: content/week03/tutorial
   - file: content/week04/tutorial
   - file: content/week05/tutorial
+  - file: content/week06/tutorial
 
 #   - file: content/week12/introduction
 #     sections:
