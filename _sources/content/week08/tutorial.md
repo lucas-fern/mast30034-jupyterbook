@@ -24,7 +24,7 @@ Be prepared to show these things in the week 9 tutorial.
 ```
 
 ```{tab-item} Real Estate
-To receive the checkpoint mark for sprint 2 you must:
+To receive the checkpoint mark for sprint 3 you must:
 - Calculate the distance (by car) to the nearest train station for all your properties, *and/or*
 - Calculate the distance (by car) to the CBD for all your properties
 - List the features that make a property more expensive or sought after
