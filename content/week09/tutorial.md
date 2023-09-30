@@ -1,4 +1,4 @@
-# Tutorial 9: Project 2, Sprint 4
+# Tutorial 9: Project 2, Sprints 4-5
 
 ## Tutorial Outline
 
