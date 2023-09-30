@@ -6,7 +6,7 @@ In today's tutorial you should:
 - Meet with your team
 - Get your sprint 3 checkpoints assessed
 - Conduct a retrospective on your sprint 3 performance
-- Make plans for the third sprint
+- Make plans for the 4th and 5th sprints
 - *Plan how you will answer the key questions for your project*
 - Ask any questions you've got
 
@@ -19,7 +19,6 @@ Presentations are delivered in the week 11 and 12 tutorials, **but slides must b
 Presentations are worth 30% of your mark for the subject, so worth getting started on this now!
 
 [(Presentation spec.)](https://www.overleaf.com/read/fgcsxbbxnkjd)
-
 
 ## Sprint 4 and 5 Checkpoints
 

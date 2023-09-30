@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Tutorial 1: Introduction, Project 1, and PySpark &#8212; MAST30034: Applied Data Science</title>
+    <title>Tutorial 10: Project 2, Sprint 6 &#8212; MAST30034: Applied Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -54,8 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Tutorial 2: More PySpark, and Geospatial Visualisations" href="../week02/tutorial.html" />
-    <link rel="prev" title="Subject Overview" href="../subject-overview.html" />
+    <link rel="prev" title="Tutorial 9: Project 2, Sprints 4-5" href="../week09/tutorial.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -133,8 +132,8 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week01/tutorial.html">
    Tutorial 1: Introduction, Project 1, and PySpark
   </a>
  </li>
@@ -178,8 +177,8 @@ const thebe_selector_output = ".output, .cell_output"
    Tutorial 9: Project 2, Sprints 4-5
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../week10/tutorial.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Tutorial 10: Project 2, Sprint 6
   </a>
  </li>
@@ -256,7 +255,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/content/week01/tutorial.md"
+        <a href="../../_sources/content/week10/tutorial.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -316,18 +315,18 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#git-jupyter-and-the-prerequisite-notebook">
-   Git, Jupyter, and the Prerequisite Notebook
+  <a class="reference internal nav-link" href="#tutorial-outline">
+   Tutorial Outline
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#digression-project-1">
-   Digression: Project 1
+  <a class="reference internal nav-link" href="#presentations">
+   Presentations
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#intro-to-pyspark">
-   Intro to PySpark
+  <a class="reference internal nav-link" href="#sprint-6-checkpoints">
+   Sprint 6 Checkpoints
   </a>
  </li>
 </ul>
@@ -339,7 +338,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Tutorial 1: Introduction, Project 1, and PySpark</h1>
+                <h1>Tutorial 10: Project 2, Sprint 6</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -350,18 +349,18 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#git-jupyter-and-the-prerequisite-notebook">
-   Git, Jupyter, and the Prerequisite Notebook
+  <a class="reference internal nav-link" href="#tutorial-outline">
+   Tutorial Outline
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#digression-project-1">
-   Digression: Project 1
+  <a class="reference internal nav-link" href="#presentations">
+   Presentations
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#intro-to-pyspark">
-   Intro to PySpark
+  <a class="reference internal nav-link" href="#sprint-6-checkpoints">
+   Sprint 6 Checkpoints
   </a>
  </li>
 </ul>
@@ -374,84 +373,55 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="tutorial-1-introduction-project-1-and-pyspark">
-<h1>Tutorial 1: Introduction, Project 1, and PySpark<a class="headerlink" href="#tutorial-1-introduction-project-1-and-pyspark" title="Permalink to this headline">#</a></h1>
-<p>Week 1 is a big tutorial. Here’s what we’re covering:</p>
-<ol class="simple">
-<li><p>Intro and overview of the subject.</p></li>
-<li><p>Git and Jupyter.</p></li>
-<li><p>The Prerequisite notebook.</p></li>
-<li><p>Project 1.</p></li>
-<li><p>Intro to PySpark.</p></li>
-</ol>
-<section id="git-jupyter-and-the-prerequisite-notebook">
-<h2>Git, Jupyter, and the Prerequisite Notebook<a class="headerlink" href="#git-jupyter-and-the-prerequisite-notebook" title="Permalink to this headline">#</a></h2>
-<p>The tutorial content is hosted on GitHub <a class="reference external" href="https://github.com/VoLKyyyOG/MAST30034_Python/tree/main/tutorials">here</a>. To get started:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="tutorial-10-project-2-sprint-6">
+<h1>Tutorial 10: Project 2, Sprint 6<a class="headerlink" href="#tutorial-10-project-2-sprint-6" title="Permalink to this headline">#</a></h1>
+<section id="tutorial-outline">
+<h2>Tutorial Outline<a class="headerlink" href="#tutorial-outline" title="Permalink to this headline">#</a></h2>
+<p>In today’s tutorial you should:</p>
 <ul class="simple">
-<li><p>open the <a class="reference external" href="https://github.com/VoLKyyyOG/MAST30034_Python/blob/main/tutorials/tute_1/Python_PreReq_Notebook.ipynb">prerequisite notebook</a></p>
-<ul>
-<li><p>if you’ve already done this, thanks!</p></li>
-<li><p>if not, make sure you’re reading our Canvas announcements</p></li>
+<li><p>Meet with your team</p></li>
+<li><p>Get your sprint 4 and 5 checkpoints assessed</p></li>
+<li><p>Conduct a retrospective on your sprint 4 and 5 performance</p></li>
+<li><p>Make plans for the 6th sprint</p></li>
+<li><p><em>Finalise your presentation slides</em></p></li>
+<li><p><em>Develop answers to the big questions</em></p></li>
+<li><p>Ask any questions you’ve got</p></li>
 </ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">clone</span></code> the repository</p>
-<ul>
-<li><p>you can use the <a class="reference external" href="https://git-scm.com/downloads"><code class="docutils literal notranslate"><span class="pre">git</span></code> Command Line Interface (CLI)</a></p></li>
-<li><p>or <a class="reference external" href="https://desktop.github.com/">GitHub Desktop</a></p></li>
-</ul>
-</li>
-<li><p>run the prerequisite notebook as a Jupyter notebook</p>
-<ul>
-<li><p>you can choose to run Jupyter:</p>
-<ul>
-<li><p>with Anaconda</p></li>
-<li><p>in Visual Studio Code</p></li>
-<li><p>with JupyterLab (<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">jupyterlab</span></code> and <code class="docutils literal notranslate"><span class="pre">jupyter-lab</span></code>)</p></li>
-<li><p>with Jupyter Notebook (<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">notebook</span></code> and <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code>)</p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>This was a prerequisite, so do this while we discuss <strong>Project 1</strong> if you haven’t already.</p>
 </section>
-<section id="digression-project-1">
-<h2>Digression: Project 1<a class="headerlink" href="#digression-project-1" title="Permalink to this headline">#</a></h2>
-<p>Project 1 is released. It is due on the first day of week 5.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>If you haven’t started already, <em>start today</em>.</strong></p>
+<section id="presentations">
+<h2>Presentations<a class="headerlink" href="#presentations" title="Permalink to this headline">#</a></h2>
+<p><strong>Slides must be submitted by the end of week 10. (Friday 17:00)</strong></p>
+<p>Presentations are worth 30% of your mark for the subject, focus on your slides and content this week if you haven’t finished yet!</p>
+<p>Presentations will run in the tutorials in weeks 11 and 12. We will tell you which groups are presenting on the day of the tutorial, so you must be prepared to present in week 11.</p>
+<p><a class="reference external" href="https://www.overleaf.com/read/fgcsxbbxnkjd">(Presentation spec.)</a></p>
+</section>
+<section id="sprint-6-checkpoints">
+<h2>Sprint 6 Checkpoints<a class="headerlink" href="#sprint-6-checkpoints" title="Permalink to this headline">#</a></h2>
+<p>These checkpoints will be assessed during the tutorial <em>in week 11</em> (after presentations).</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="99ea7fa1-32cc-4bf6-8882-20412d260703" name="d660dfcb-ceec-4c42-a020-31dd04bdf3ac" type="radio">
+</input><label class="sd-tab-label" for="99ea7fa1-32cc-4bf6-8882-20412d260703">
+Buy Now, Pay Later</label><div class="sd-tab-content docutils">
+<p>To receive the checkpoint mark for sprint 6 you must:</p>
 <ul class="simple">
-<li><p>I’m serious!!</p></li>
-<li><p>No one listens to this, and everyone complains that we didn’t give you long enough in week 5.</p></li>
-<li><p>This used to be due at the start of week 4, so we have little sympathy for people who didn’t listen to this warning.</p></li>
-<li><p>The handbook says this will take <strong>30 hours</strong>. <em>This isn’t a joke.</em></p></li>
+<li><p>Determine the top 100 merchants overall</p></li>
+<li><p>Determine the top 10 merchants within each of your chosen market segments</p></li>
+<li><p>Prepare a summary notebook (3-5 minutes) showing your findings and additional insights</p></li>
 </ul>
+<p>Be prepared to show these things in the week 11 tutorial.</p>
 </div>
-<p>View the <a class="reference external" href="https://www.overleaf.com/project/6487b326d555f7d3313a4de2">assignment specification</a> and complete the <strong>Project 1 Canvas module</strong> <em>today!</em></p>
-<p>In short, project 1 asks that you undertake an independent investigation into a data set we have selected for you. The data set contains information about taxi journeys in New York City, and it is up to you to come up with an interesting research topic surrounding this data set. Some (overused) examples include:</p>
+<input id="6fe18877-3d7b-4436-816f-eedb1f7098de" name="d660dfcb-ceec-4c42-a020-31dd04bdf3ac" type="radio">
+</input><label class="sd-tab-label" for="6fe18877-3d7b-4436-816f-eedb1f7098de">
+Real Estate</label><div class="sd-tab-content docutils">
+<p>To receive the checkpoint mark for sprint 6 you must:</p>
 <ul class="simple">
-<li><p>How do weather conditions impact demand for taxis in the different boroughs of NYC?</p></li>
-<li><p>What was the impact of COVID-19 on the usage of taxis throughout the city?</p></li>
+<li><p>Output 3-year predictions for your chosen granularity (e.g. suburb, SA2, or other cluster of properties)</p></li>
+<li><p>Provide a summary of your predictions</p></li>
+<li><p>Provide an answer the the 3 big questions</p></li>
 </ul>
-<p>Try and come up with an interesting and unique question that makes use of an external data set. If you’re struggling to come up with a research topic I would recommend:</p>
-<ul class="simple">
-<li><p>Thinking about your other interests, would they interact with taxi demand somehow?</p></li>
-<li><p>Looking at the data set, look at the features it contains and consider that your investigation can use any of these.</p>
-<ul>
-<li><p>Produce some initial visualisations, does anything interesting stand out?</p></li>
-</ul>
-</li>
-<li><p>Looking at what external data is available, this can guide your research topic.</p></li>
-<li><p>Considering geospatial data/analysis. We will look at visualising this in the coming weeks and this can be a good way to develop new skills and produce interesting results.</p></li>
-</ul>
-<p>In general, strong submissions show evidence of a well planned and refined research question that makes central use of an external data set. Submissions that pick general/bland questions (<em>eg.</em> how does the day of the week impact tips, etc.), and submissions that make limited use of external data (<em>eg.</em> adding data that does not meaningfully contribute to their research question) receive lower marks.</p>
-</section>
-<section id="intro-to-pyspark">
-<h2>Intro to PySpark<a class="headerlink" href="#intro-to-pyspark" title="Permalink to this headline">#</a></h2>
-<p>Hopefully we’ve got about an hour left to spend on the <a class="reference external" href="https://github.com/VoLKyyyOG/MAST30034_Python/blob/main/tutorials/tute_1/Tute1_Python.ipynb">tutorial 1 notebook</a>.</p>
-<p>Open this up in your Jupyter instance and we’ll start talking through the content.</p>
-<p>If you’re struggling to run the notebook, ask the people on your table for help, then ask me.</p>
+<p>Be prepared to show these things in the week 11 tutorial.</p>
+</div>
+</div>
 </section>
 </section>
 
@@ -468,7 +438,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             name: "python3",
-            path: "./content/week01"
+            path: "./content/week10"
         },
         predefinedOutput: true
     }
@@ -482,19 +452,12 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../subject-overview.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../week09/tutorial.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Subject Overview</p>
+            <p class="prev-next-title">Tutorial 9: Project 2, Sprints 4-5</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="../week02/tutorial.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Tutorial 2: More PySpark, and Geospatial Visualisations</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
