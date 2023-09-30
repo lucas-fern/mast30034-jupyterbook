@@ -18,6 +18,7 @@ parts:
   - file: content/week07/tutorial
   - file: content/week08/tutorial
   - file: content/week09/tutorial
+  - file: content/week10/tutorial
 
 #   - file: content/week12/introduction
 #     sections:
